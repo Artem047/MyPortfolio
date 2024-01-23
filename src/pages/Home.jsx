@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Project from "../components/Project";
 
 const Home = () => {
   return (
@@ -42,6 +43,7 @@ const Home = () => {
         <img src="/Memoji.png" alt="" />
       </div>
       <hr className="w-full" />
+      <Project />
     </>
   );
 };
