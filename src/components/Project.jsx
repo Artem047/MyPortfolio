@@ -30,22 +30,22 @@ const Project = () => {
           </div>
           <div>
             <h3 className="text-base uppercase text-white border-b py-4 border-b-[#484848]">
-              Project Info
+              Информация о проекте
             </h3>
             <ul>
               {projectInfo.map((info, index) => {
                 return (
                   <div key={index}>
                     <li className="flex justify-between border-b py-4 border-b-[#484848]">
-                      <h4 className="text-white">Year</h4>
+                      <h4 className="text-white">Год</h4>
                       <p>{info.year}</p>
                     </li>
                     <li className="flex justify-between border-b py-4 border-b-[#484848]">
-                      <h4 className="text-white">Role</h4>
+                      <h4 className="text-white">Роль</h4>
                       <p>{info.role}</p>
                     </li>
                     <li className="flex justify-between border-b py-4 border-b-[#484848]">
-                      <h4 className="text-white">Stack</h4>
+                      <h4 className="text-white">Технологии</h4>
                       <p>{info.stack}</p>
                     </li>
                   </div>

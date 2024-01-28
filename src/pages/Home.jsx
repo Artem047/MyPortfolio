@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Project from "../components/Project";
+import About from "../components/About";
 
 const Home = () => {
   return (
@@ -44,6 +45,8 @@ const Home = () => {
       </div>
       <hr className="w-full" />
       <Project />
+      <hr className="w-full"/>
+      <About />
     </>
   );
 };

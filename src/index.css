@@ -11,3 +11,7 @@ body{
   background-color: #0A0A0A;
   color: #C7C7C7;
 }
+
+a:hover{
+  color: #D3E97A;
+}
