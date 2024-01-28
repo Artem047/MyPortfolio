@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Project from "../components/Project";
 import About from "../components/About";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -47,6 +48,8 @@ const Home = () => {
       <Project />
       <hr className="w-full"/>
       <About />
+      <hr className="w-full"/>
+      <Contact />
     </>
   );
 };
