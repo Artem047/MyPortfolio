@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-import Project from "../components/Project";
-import About from "../components/About";
-import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -21,7 +18,7 @@ const Home = () => {
               target="blank"
               className="bg-[#D3E97A] flex items-center gap-2 p-2 rounded-[100px]"
             >
-              <b className="text-[#0A0A0A] uppercase">Contact Me</b>
+              <b className="text-[#0A0A0A] uppercase">Контакт</b>
               <div className="bg-black w-10 h-10 rounded-[50%] flex justify-center items-center">
                 <img src="/arrow.svg" alt="" />
               </div>
@@ -44,12 +41,6 @@ const Home = () => {
         </div>
         <img src="/Memoji.png" alt="" />
       </div>
-      <hr className="w-full" />
-      <Project />
-      <hr className="w-full"/>
-      <About />
-      <hr className="w-full"/>
-      <Contact />
     </>
   );
 };

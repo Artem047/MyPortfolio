@@ -14,7 +14,7 @@ const Contact = () => {
           </div>
           <div className="flex gap-1">
             <p>Для получения дополнительной информации, вот моё</p>
-            <Link target="blank" to='https://docs.google.com/document/d/1hCQySGY1ORO-isPXWFPGk1XVM2UareCS/edit' className="text-white border-b border-[#D3E97A]">
+            <Link target="blank" to='https://www.figma.com/file/ogEyHEVYmTiBMIoKZAu3c5/Resume?type=design&node-id=0%3A1&mode=design&t=alaNCYvDbi0w8AKe-1' className="text-white border-b border-[#D3E97A]">
                 резюме
             </Link>
           </div>
