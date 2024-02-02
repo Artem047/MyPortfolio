@@ -54,7 +54,7 @@ const About = () => {
         </div>
       </div>
       <div className="mt-20 w-full bg-[#C7C7C7] rounded-2xl py-4">
-        <img src="/me.png" alt="" className="mx-auto" />
+        <img src="/Me.png" alt="" className="mx-auto" />
       </div>
       <section className="py-20 flex justify-between">
         <h1 className="uppercase text-7xl">технологии</h1>
