@@ -82,6 +82,7 @@ const Contact = () => {
           <b>отправить</b>
         </button>
       </form>
+      
     </div>
   );
 };
