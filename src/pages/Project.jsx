@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { projectInfo } from "../data/data";
-import ProjectInfo from "./ProjectInfo";
+import ProjectInfo from "../components/ProjectInfo";
 
 const Project = () => {
   return (
