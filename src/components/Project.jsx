@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { projectInfo } from "../data/data";
+import ProjectInfo from "./ProjectInfo";
 
 const Project = () => {
   return (
@@ -11,59 +12,48 @@ const Project = () => {
           во front-end разработке.
         </p>
       </div>
-      <div className="pt-20 flex gap-12 items-center">
-        <div className="max-w-[600px] w-full max-h-[600px] h-full bg-[#1A1A1A] flex justify-center items-center px-14 py-28">
-          <img src="/work.png" alt="" />
-        </div>
-        <div className="flex flex-col gap-10 max-w-[576px] w-full">
-          <div className="flex flex-col gap-4">
-            <h1 className="text-4xl text-white">
-              Promotional landing page for our favorite show
-            </h1>
-            <p>
-              Teamed up with a designer to breathe life into a promotional
-              webpage for our beloved show, Adventure Time. Delivered a fully
-              responsive design with dynamic content capabilities, seamlessly
-              integrating a newsletter feature to keep fans updated with the
-              latest adventures.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-base uppercase text-white border-b py-4 border-b-[#484848]">
-              Информация о проекте
-            </h3>
-            <ul>
-              {projectInfo.map((info, index) => {
-                return (
-                  <div key={index}>
-                    <li className="flex justify-between border-b py-4 border-b-[#484848]">
-                      <h4 className="text-white">Год</h4>
-                      <p>{info.year}</p>
-                    </li>
-                    <li className="flex justify-between border-b py-4 border-b-[#484848]">
-                      <h4 className="text-white">Роль</h4>
-                      <p>{info.role}</p>
-                    </li>
-                    <li className="flex justify-between border-b py-4 border-b-[#484848]">
-                      <h4 className="text-white">Технологии</h4>
-                      <p>{info.stack}</p>
-                    </li>
+      <div className="pt-20 flex flex-col gap-[120px]">
+        {projectInfo.map((project, id) => {
+          return (
+            <div key={id} className="flex gap-12 items-center">
+              <div className="max-w-[600px] w-full max-h-[600px] h-full bg-[#1A1A1A] flex justify-center items-center px-14 py-28">
+                <img src={project.image} alt="" className="rounded-xl" />
+              </div>
+              <div className="flex flex-col gap-10 max-w-[576px] w-full">
+                <div className="flex flex-col gap-4">
+                  <h1 className="text-4xl text-white">
+                    {project.title}
+                  </h1>
+                  <p>
+                    {project.desc}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-base uppercase text-white border-b py-4 border-b-[#484848]">
+                    Информация о проекте
+                  </h3>
+                  <div>
+                    {project.info.map((info, i) => {
+                      return (
+                        <ProjectInfo key={i} info={info} />
+                      );
+                    })}
                   </div>
-                );
-              })}
-            </ul>
-          </div>
-          <div className="flex gap-12">
-            <Link className="flex items-center gap-1 border-b border-b-[#D3E97A] py-2">
-              <b className="uppercase text-[#D3E97A]">live demo</b>
-              <img src="/green_arrow.svg" alt="" />
-            </Link>
-            <Link className="flex items-center gap-1 border-b border-b-[#D3E97A] py-2">
-              <b className="uppercase text-[#D3E97A]">See on Github</b>
-              <img src="/git.svg" alt="" />
-            </Link>
-          </div>
-        </div>
+                </div>
+                <div className="flex gap-12">
+                  <Link to={project.links} target="blank2" className="flex items-center gap-1 border-b border-b-[#D3E97A] py-2">
+                    <b className="uppercase text-[#D3E97A]">смотреть демо</b>
+                    <img src="/green_arrow.svg" alt="" />
+                  </Link>
+                  <Link to={project.github} target="blank" className="flex items-center gap-1 border-b border-b-[#D3E97A] py-2">
+                    <b className="uppercase text-[#D3E97A]">Github</b>
+                    <img src="/git.svg" alt="" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
