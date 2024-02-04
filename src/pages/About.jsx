@@ -78,7 +78,7 @@ const About = () => {
       </section>
       <hr className="w-full" />
       <section className="py-20 flex justify-between">
-        <h1 className="uppercase text-7xl">Мой опыт</h1>
+        <h1 className="uppercase text-7xl">опыт</h1>
         <div className="flex flex-col gap-2 max-w-[600px] w-full">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl text-white">Стажер Front-End</h2>
