@@ -3,15 +3,15 @@ import { technology } from "../data/data";
 
 const About = () => {
   return (
-    <div className="px-[108px] py-20">
-      <div className="flex justify-between">
-        <h1 className="text-[100px] uppercase text-white">Обо мне</h1>
+    <div className="px-[108px] py-20 lat:p-10 tab:p-5">
+      <div className="flex justify-between lat:flex-col lat:items-center lat:gap-5">
+        <h1 className="text-[100px] uppercase text-white lat:text-7xl tel:text-5xl">Обо мне</h1>
         <div className="flex flex-col gap-12">
           <section className="max-w-[705px] w-full flex flex-col gap-4">
-            <h2 className="text-white text-4xl">
+            <h2 className="text-white text-4xl tel:text-center tel:text-2xl">
               Я front-end разработчик из Москвы.
             </h2>
-            <p className="text-lg">
+            <p className="text-lg tel:text-base">
               Добро пожаловать! Я младший Front-end разработчик с опытом работы
               в HTML, CSS, JavaScript, React, Vite, Figma, Tailwind и SCSS. Я
               умею создавать пользовательские интерфейсы с помощью HTML, CSS и
@@ -23,7 +23,7 @@ const About = () => {
               привлекательные веб-сайты, ориентированные на пользователя.
             </p>
           </section>
-          <div className="flex gap-4">
+          <div className="flex gap-4 lat:justify-center tel:flex-wrap tel:items-center">
             <Link
               to="/doc/resume.pdf"
               rel="noreferrer"
@@ -56,16 +56,16 @@ const About = () => {
       <div className="mt-20 w-full bg-[#C7C7C7] rounded-2xl py-4">
         <img src="/Me.png" alt="" className="mx-auto" />
       </div>
-      <section className="py-20 flex justify-between">
-        <h1 className="uppercase text-7xl">технологии</h1>
-        <div className="flex flex-col gap-8 max-w-[600px] w-full">
-          <p>
+      <section className="py-20 flex justify-between lat:flex-col lat:items-center lat:gap-10 tab:py-10">
+        <h1 className="uppercase text-7xl tab:text-5xl">технологии</h1>
+        <div className="flex flex-col gap-8 w-[600px] lat:w-full">
+          <p className="lat:text-2xl tab:text-lg">
             Добро пожаловать в раздел 'Технологии' – пространство, где я,
             фронтенд программист, демонстрирую свой путь в мире современных
             технологий. Здесь вы найдете мой опыт, инструменты и исследования,
             позволяющие создавать увлекательные и инновационные веб-приложения.
           </p>
-          <ul className="flex flex-wrap gap-4">
+          <ul className="flex flex-wrap gap-4 tab:justify-center">
             {technology.map((tec) => {
               return (
                 <li key={tec.id} className="py-5 px-10 border rounded-[100px] uppercase">
@@ -77,10 +77,10 @@ const About = () => {
         </div>
       </section>
       <hr className="w-full" />
-      <section className="py-20 flex justify-between">
-        <h1 className="uppercase text-7xl">опыт</h1>
-        <div className="flex flex-col gap-2 max-w-[600px] w-full">
-          <div className="flex items-center justify-between">
+      <section className="py-20 flex justify-between gap-10 tab:flex-col tab:py-10">
+        <h1 className="uppercase text-7xl lat:text-center">опыт</h1>
+        <div className="flex flex-col gap-2 w-[600px] tab:w-full">
+          <div className="flex items-center justify-between flex-wrap">
             <h2 className="text-2xl text-white">Стажер Front-End</h2>
             <p className="text-lg">Февраль 2023 — Июль 2023</p>
           </div>
