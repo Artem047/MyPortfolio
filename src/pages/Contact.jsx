@@ -3,12 +3,12 @@ import { FaTelegram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="py-20 px-[108px] flex gap-6">
-      <div className="flex flex-col gap-10 max-w-[600px] w-full">
+    <div className="py-20 px-[108px] flex gap-6 justify-between lat:p-10 lat:flex-col lat:items-center">
+      <div className="flex flex-col gap-10 w-[600px] tab:w-full">
         <section className="flex flex-col gap-4">
-          <h1 className="text-7xl text-white uppercase">Контакты</h1>
+          <h1 className="text-7xl text-white uppercase lat:text-center tab:text-5xl">Контакты</h1>
           <div className="flex flex-col gap-2">
-            <div className="flex gap-1">
+            <div className="flex gap-1 flex-wrap">
               <p>Поздороваться в</p>
               <Link
                 target="blank"
@@ -18,7 +18,7 @@ const Contact = () => {
                 artem.glebov2004@yandex.ru
               </Link>
             </div>
-            <div className="flex gap-1">
+            <div className="flex gap-1 flex-wrap tel:flex-none">
               <p>Для получения дополнительной информации, вот моё</p>
               <Link
                 target="blank"
@@ -30,7 +30,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
-        <div className="flex gap-6">
+        <div className="flex gap-6 lat:justify-center">
           <Link
             target="blank"
             to="https://podolsk.hh.ru/resume/0280e604ff0b8fdd0a0039ed1f303764526569"
@@ -50,7 +50,7 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-      <form className="max-w-[600px] w-full flex flex-col gap-6">
+      <form className="flex flex-col gap-6 w-[600px] tab:w-full">
         <div className="flex flex-col gap-2">
           <label className="text-[#C7C7C7]">Имя</label>
           <input
@@ -82,7 +82,6 @@ const Contact = () => {
           <b>отправить</b>
         </button>
       </form>
-      
     </div>
   );
 };
