@@ -10,7 +10,7 @@ export const projectInfo = [
         stack: "ReactJS, CSS, Vite, Rest API",
       },
     ],
-    links: 'https://recipes-eight-pied.vercel.app/auth/login',
+    links: 'https://recipes-artem-glebov.vercel.app/auth/login',
     github: 'https://github.com/Artem047/recipes'
   },
   {
