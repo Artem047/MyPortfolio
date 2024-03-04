@@ -17,7 +17,7 @@ const Project = () => {
           return (
             <div key={id} className="flex gap-12 items-center lat:flex-col">
               <div className="max-w-[600px] w-full max-h-[600px] h-full bg-[#1A1A1A] flex justify-center items-center px-14 py-28 lat:p-10">
-                <img src={project.image} alt="" className="rounded-xl" />
+                <img src={project.image} alt="" className="rounded-xl" loading="lazy" />
               </div>
               <div className="flex flex-col gap-10 max-w-[576px] w-full">
                 <div className="flex flex-col gap-4">
@@ -43,11 +43,11 @@ const Project = () => {
                 <div className="flex gap-12 lat:justify-center tel:flex-col tel:items-center tel:gap-4">
                   <Link to={project.links} target="blank2" className="flex items-center gap-1 border-b border-b-[#D3E97A] py-2">
                     <b className="uppercase text-[#D3E97A]">смотреть демо</b>
-                    <img src="/green_arrow.svg" alt="" />
+                    <img src="/green_arrow.svg" alt="" loading="lazy" />
                   </Link>
                   <Link to={project.github} target="blank" className="flex items-center gap-1 border-b border-b-[#D3E97A] py-2">
                     <b className="uppercase text-[#D3E97A]">Github</b>
-                    <img src="/git.svg" alt="" />
+                    <img src="/git.svg" alt="" loading="lazy" />
                   </Link>
                 </div>
               </div>

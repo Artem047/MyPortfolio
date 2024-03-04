@@ -33,7 +33,7 @@ const About = () => {
             >
               <b className="text-[#0A0A0A] uppercase">Загрузить резюме</b>
               <div className="bg-black w-10 h-10 rounded-[50%] flex justify-center items-center">
-                <img src="/arrow.svg" alt="" />
+                <img src="/arrow.svg" alt="" loading="lazy" />
               </div>
             </Link>
             <Link
@@ -41,20 +41,20 @@ const About = () => {
               to="https://podolsk.hh.ru/resume/0280e604ff0b8fdd0a0039ed1f303764526569"
               className="bg-[#222] w-14 h-14 rounded-[50%] flex items-center justify-center"
             >
-              <img src="/hh.svg" alt="" />
+              <img src="/hh.svg" alt="" loading="lazy" />
             </Link>
             <Link
               to="https://github.com/Artem047"
               target="blank"
               className="bg-[#222] w-14 h-14 rounded-[50%] flex items-center justify-center"
             >
-              <img src="/git.svg" alt="" />
+              <img src="/git.svg" alt="" loading="lazy"/>
             </Link>
           </div>
         </div>
       </div>
       <div className="mt-20 w-full bg-[#C7C7C7] rounded-2xl py-4">
-        <img src="/Me.png" alt="" className="mx-auto" />
+        <img src="/Me.png" alt="" className="mx-auto" loading="lazy"/>
       </div>
       <section className="py-20 flex justify-between lat:flex-col lat:items-center lat:gap-10 tab:py-10">
         <h1 className="uppercase text-7xl tab:text-5xl">технологии</h1>

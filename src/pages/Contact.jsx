@@ -36,14 +36,14 @@ const Contact = () => {
             to="https://podolsk.hh.ru/resume/0280e604ff0b8fdd0a0039ed1f303764526569"
             className="w-10 h-10"
           >
-            <img src="/hh.svg" alt="" className="w-full" />
+            <img src="/hh.svg" alt="" className="w-full" loading="lazy" />
           </Link>
           <Link
             to="https://github.com/Artem047"
             target="blank"
             className="w-10 h-10"
           >
-            <img src="/git.svg" alt="" className="w-full" />
+            <img src="/git.svg" alt="" className="w-full" loading="lazy" />
           </Link>
           <Link to="https://t.me/agleboov" target="blank">
             <FaTelegram size={40} color="#D3E97A" />

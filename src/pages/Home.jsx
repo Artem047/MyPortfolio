@@ -20,7 +20,7 @@ const Home = () => {
             >
               <b className="text-[#0A0A0A] uppercase">Контакт</b>
               <div className="bg-black w-10 h-10 rounded-[50%] flex justify-center items-center">
-                <img src="/arrow.svg" alt="" />
+                <img src="/arrow.svg" alt="" loading="lazy" />
               </div>
             </Link>
             <Link
@@ -28,18 +28,18 @@ const Home = () => {
               to="https://podolsk.hh.ru/resume/0280e604ff0b8fdd0a0039ed1f303764526569"
               className="bg-[#222] w-14 h-14 rounded-[50%] flex items-center justify-center"
             >
-              <img src="/hh.svg" alt="" />
+              <img src="/hh.svg" alt="" loading="lazy" />
             </Link>
             <Link
               to="https://github.com/Artem047"
               target="blank"
               className="bg-[#222] w-14 h-14 rounded-[50%] flex items-center justify-center"
             >
-              <img src="/git.svg" alt="" />
+              <img src="/git.svg" alt="" loading="lazy" />
             </Link>
           </div>
         </div>
-        <img src="/Memoji.png" alt="" className="max-w-[500px] w-full lat:w-[400px] tab:w-full" />
+        <img src="/Memoji.png" alt="" className="max-w-[500px] w-full lat:w-[400px] tab:w-full" loading="lazy" />
       </div>
     </>
   );
