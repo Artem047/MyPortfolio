@@ -7,7 +7,7 @@ export const projectInfo = [
       {
         year: "2024",
         role: "Frontend Developer",
-        stack: "ReactJS, CSS, Vite, Rest API",
+        stack: "React, CSS, Vite, Rest API, JavaScript",
       },
     ],
     links: 'https://recipes-artem-glebov.vercel.app/auth/login',
@@ -21,7 +21,7 @@ export const projectInfo = [
       {
         year: "2023",
         role: "Frontend Developer",
-        stack: "ReactJS, SCSS, Vite",
+        stack: "React, SCSS, Vite, JavaScript",
       },
     ],
     links: 'https://just-tuning.vercel.app/',
@@ -35,11 +35,25 @@ export const projectInfo = [
       {
         year: "2023",
         role: "Frontend Developer",
-        stack: "ReactJS, Tailwind CSS, Vite",
+        stack: "React, Tailwind CSS, Vite, JavaScript",
       },
     ],
     links: 'https://gd-consulting.vercel.app/',
     github: 'https://github.com/Artem047/GD_Consulting'
+  },
+  {
+    image: "/blog.png",
+    title: "Artem's Blog 📸",
+    desc: 'Добро пожаловать на наш блог, место, где ваше творчество оживает! Здесь вы можете безгранично выражать свои мысли, идеи и вдохновение, создавая уникальные посты, которые будут вдохновлять и развлекать наших читателей. Наша платформа предоставляет простой и интуитивно понятный интерфейс для написания и публикации контента, а также возможность общаться с сообществом блогеров. Присоединяйтесь к нам сегодня и дайте миру увидеть ваше творческое видение!',
+    info: [
+      {
+        year: "2024",
+        role: "Frontend Developer",
+        stack: "React, Tailwind CSS, Vite, Firebase, TypeScript",
+      },
+    ],
+    links: 'https://artem-glebov-blog.vercel.app/',
+    github: 'https://github.com/Artem047/BlogApp'
   }
 ];
 export const technology = [
